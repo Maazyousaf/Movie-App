@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Sunshiney", cursive;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.bg {
+  background-image: url(/moviesWall.jfif);
+  width: 100%;
+  height: 100vh;
+  filter: blur(7px);
+}
+
+.inp {
+  position: absolute;
+  left: 7%;
+  top: 10%;
+  border: none;
+  width: 24.5%;
+  height: 8vh;
+  background-color: rgba(255, 255, 255, 0);
+  border-bottom: 3px solid #9147ff;
+  color: rgb(255, 255, 255);
+  font-weight: bolder;
+  text-indent: 20px;
+  font-size: 30px;
+  letter-spacing: 2px;
+  transition: 0.5s;
+}
+
+.inp:hover {
+  background-color: rgba(255, 255, 255, 0);
+  border: 2px solid #9147ff;
+  box-shadow: 2px 2px 5px black;
+}
+
+::placeholder {
+  color: white;
+  font-size: 30px;
+}
+
+.img {
+  position: absolute;
+  left: 7%;
+  top: 20%;
+  width: 24.5%;
+  height: 70%;
+  box-shadow: 2px 2px 5px;
+  background-color: rgba(255, 255, 255, 0.24);
+  background-image: url("/");
+  cursor: crosshair;
+}
+
+.title {
+  position: absolute;
+  width: 45%;
+  height: 5vh;
+  left: 5%;
+  top: 15%;
+  background-color: #fff;
+  color: rgb(29, 29, 29);
+  font-size: 20px;
+  text-indent: 20px;
+}
+
+.txt {
+  position: absolute;
+  top: 20vh;
+  left: 30%;
+  width: 50%;
+  height: 70%;
+  color: rgb(29, 29, 29);
+  font-size: 25px;
+  text-indent: 20px;
+  font-weight: bolder;
+  background-image: url(/paper.jfif);
+  box-shadow: 4px 4px 20px black;
+  text-indent: 10px;
+  text-align: center;
+  word-wrap: break-word;
+  box-sizing: border-box;
+  padding-top: 20px;
+  line-height: 2;
+  transition: 1s;
+  filter: blur(4px);
+  cursor: crosshair;
+}
+
+.txt:hover {
+  transform: perspective(0cm) rotateY(0deg);
+  box-shadow: 1px 1px 5px black;
+}
+
+.txt:not(:hover) {
+  filter: blur(4px);
+}
+
+.rot {
+  transform: perspective(25cm) translateX(100px) rotateY(15deg);
+  filter: blur(0);
+}
